@@ -1,8 +1,9 @@
 package Lab2;
+
 import java.util.Scanner;
 /*
- * 1 Задание - в произвольной строке считаем количество символов, разделяем ее на 2 подстроки,
- * которые выводим на принт.
+ * 1 Р—Р°РґР°РЅРёРµ - РІ РїСЂРѕРёР·РІРѕР»СЊРЅРѕР№ СЃС‚СЂРѕРєРµ СЃС‡РёС‚Р°РµРј РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ, СЂР°Р·РґРµР»СЏРµРј РµРµ РЅР° 2 РїРѕРґСЃС‚СЂРѕРєРё,
+ * РєРѕС‚РѕСЂС‹Рµ РІС‹РІРѕРґРёРј РЅР° РїСЂРёРЅС‚.
  */
 
 public class TwoStrings {
@@ -11,20 +12,19 @@ public class TwoStrings {
 
 	public static void main(String[] args) {
 		enterString = new Scanner(System.in);
-			System.out.println("Введите произвольную строку и нажмите Enter");		//решил ввести ее с консоли
-			String str1;
-		str1=enterString.nextLine();
-		//String str1=new String("jklsdhglsdmnlwfieflsdkki84938ur48urwoeifj848");
-			System.out.println(str1);
-		int str1Lenght=str1.length();
-			System.out.println("В строке "+str1Lenght+" символа(ов)");
-		int halfNum=str1Lenght/2;
-			System.out.println("половина символов "+halfNum);
-		String firstSubStr=str1.substring(0, halfNum);
-		String secondSubStr=str1.substring(halfNum, str1Lenght-1);
-		System.out.println("Первая половина строки - "+firstSubStr);
-		System.out.println("Вторая половина строки - "+secondSubStr);
-		
+		System.out.println("Р’РІРµРґРёС‚Рµ РїСЂРѕРёР·РІРѕР»СЊРЅСѓСЋ СЃС‚СЂРѕРєСѓ Рё РЅР°Р¶РјРёС‚Рµ Enter");
+		String str1;
+		str1 = enterString.nextLine();
+		System.out.println(str1);
+		int str1Lenght = str1.length();
+		System.out.println("Р’ СЃС‚СЂРѕРєРµ " + str1Lenght + " СЃРёРјРІРѕР»Р°(РѕРІ)");
+		int halfNum = str1Lenght / 2;
+		System.out.println("РїРѕР»РѕРІРёРЅР° СЃРёРјРІРѕР»РѕРІ " + halfNum);
+		String firstSubStr = str1.substring(0, halfNum);
+		String secondSubStr = str1.substring(halfNum, str1Lenght - 1);
+		System.out.println("РџРµСЂРІР°СЏ РїРѕР»РѕРІРёРЅР° СЃС‚СЂРѕРєРё - " + firstSubStr);
+		System.out.println("Р’С‚РѕСЂР°СЏ РїРѕР»РѕРІРёРЅР° СЃС‚СЂРѕРєРё - " + secondSubStr);
+
 	}
 
 }

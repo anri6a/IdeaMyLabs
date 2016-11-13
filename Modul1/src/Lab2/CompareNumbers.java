@@ -1,26 +1,25 @@
 package Lab2;
+
 import java.util.Scanner;
+
 /*
- * 2 çàäàíèå íà ñðàâíåíèå äâóõ, ââåäåííûõ ñ êëàâèàòóðû ÷èñåë
+ * 2 Ð·Ð°Ð´Ð°Ð½Ð¸Ðµ Ð½Ð° ÑÑ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ Ð´Ð²ÑƒÑ…, Ð²Ð²ÐµÐ´ÐµÐ½Ð½Ñ‹Ñ… Ñ ÐºÐ»Ð°Ð²Ð¸Ð°Ñ‚ÑƒÑ€Ñ‹ Ñ‡Ð¸ÑÐµÐ»
  */
 public class CompareNumbers {
 	private static Scanner enterNum;
 
 	public static void main(String[] args) {
-		enterNum=new Scanner(System.in);
+		enterNum = new Scanner(System.in);
 		System.out.println("Enter first and second number");
 		int firstNum, secondNum;
-		firstNum=enterNum.nextInt();
-		secondNum=enterNum.nextInt();
-		//System.out.println(firstNum);
-		//System.out.println(secondNum);
-		
-			if (firstNum>secondNum){
+		firstNum = enterNum.nextInt();
+		secondNum = enterNum.nextInt();
+		if (firstNum > secondNum) {
 			System.out.println("1>2");
-	} else if (firstNum<secondNum){
-		System.out.println("1<2");
-	} else {
-		System.out.println("1=2");
-	}
+		} else if (firstNum < secondNum) {
+			System.out.println("1<2");
+		} else {
+			System.out.println("1=2");
+		}
 	}
 }

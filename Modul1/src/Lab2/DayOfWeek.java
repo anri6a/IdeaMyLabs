@@ -1,39 +1,42 @@
 package Lab2;
+
 import java.util.Scanner;
+
 /*
- * 7 задание на вывод названия дня недели по введенному номеру дня
+ * 7 Р·Р°РґР°РЅРёРµ РЅР° РІС‹РІРѕРґ РЅР°Р·РІР°РЅРёСЏ РґРЅСЏ РЅРµРґРµР»Рё РїРѕ РІРІРµРґРµРЅРЅРѕРјСѓ РЅРѕРјРµСЂСѓ РґРЅСЏ
  */
 public class DayOfWeek {
-	private static Scanner EnterDay; 
+	private static Scanner EnterDay;
+
 	public static void main(String[] args) {
-		EnterDay=new Scanner(System.in);
+		EnterDay = new Scanner(System.in);
 		int enterDay;
-		System.out.println("Enter Number of Day 1-7");
-		enterDay=EnterDay.nextInt();
+		System.out.println("Р’РµРґРёС‚Рµ РЅРѕРјРµСЂ РґРЅСЏ РЅРµРґРµР»Рё 1-7");
+		enterDay = EnterDay.nextInt();
 		switch (enterDay) {
 		case 1:
-			System.out.println("Этот день - понедельник");
+			System.out.println("Р­С‚РѕС‚ РґРµРЅСЊ - РїРѕРЅРµРґРµР»СЊРЅРёРє");
 			break;
 		case 2:
-			System.out.println("Этот день - вторник");
+			System.out.println("Р­С‚РѕС‚ РґРµРЅСЊ - РІС‚РѕСЂРЅРёРє");
 			break;
 		case 3:
-			System.out.println("Этот день - среда");
+			System.out.println("Р­С‚РѕС‚ РґРµРЅСЊ - СЃСЂРµРґР°");
 			break;
 		case 4:
-			System.out.println("Этот день - четверг");
+			System.out.println("Р­С‚РѕС‚ РґРµРЅСЊ - С‡РµС‚РІРµСЂРі");
 			break;
 		case 5:
-			System.out.println("Этот день - пятница");
+			System.out.println("Р­С‚РѕС‚ РґРµРЅСЊ - РїСЏС‚РЅРёС†Р°");
 			break;
 		case 6:
-			System.out.println("Этот день - суббота");
+			System.out.println("Р­С‚РѕС‚ РґРµРЅСЊ - СЃСѓР±Р±РѕС‚Р°");
 			break;
 		case 7:
-			System.out.println("Этот день - воскресенье");
+			System.out.println("Р­С‚РѕС‚ РґРµРЅСЊ - РІРѕСЃРєСЂРµСЃРµРЅСЊРµ");
 			break;
 		default:
-			System.out.println("Такого дня недели не существует");
+			System.out.println("Р”РЅСЏ РЅРµРґРµР»Рё СЃ С‚Р°РєРёРј РЅРѕРјРµСЂРѕРј РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚");
 			break;
 		}
 

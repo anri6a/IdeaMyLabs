@@ -1,20 +1,22 @@
 package Lab2;
+
 import java.util.Scanner;
+
 /*
- * 3 задание на вычисление частного двух чисел
+ * 3 Р·Р°РґР°РЅРёРµ РЅР° РІС‹С‡РёСЃР»РµРЅРёРµ С‡Р°СЃС‚РЅРѕРіРѕ РґРІСѓС… С‡РёСЃРµР»
  */
 public class DivNumbers {
 	private static Scanner enterNum;
+
 	public static void main(String[] args) {
-		enterNum=new Scanner(System.in);
+		enterNum = new Scanner(System.in);
 		double firstNum, secondNum;
 		System.out.println("Enter numbers");
-		firstNum=enterNum.nextDouble();
-		secondNum=enterNum.nextDouble();
-		double result=firstNum/secondNum;
-		System.out.printf("Result of division is - %.3f",result); //выводим с точностью 3 цифры после зыпятой
-		
-		
+		firstNum = enterNum.nextDouble();
+		secondNum = enterNum.nextDouble();
+		double result = firstNum / secondNum;
+		System.out.printf("Result of division is - %.3f", result); //РІС‹РІРѕРґРёРј СЃ С‚РѕС‡РЅРѕСЃС‚СЊСЋ 3 С†РёС„СЂС‹ РїРѕСЃР»Рµ Р·Р°РїСЏС‚РѕР№
+																
 	}
 
 }

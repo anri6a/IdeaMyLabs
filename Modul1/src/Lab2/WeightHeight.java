@@ -1,23 +1,26 @@
 package Lab2;
+
 import java.util.Scanner;
+
 /*
- * 5 задание по вычислению оптимального весо-ростового показателя
+ * 5 Р·Р°РґР°РЅРёРµ РЅР° СЂРµРєРѕРјРјРµРЅРґР°С†РёСЋ РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅРѕ РІРµСЃР°-СЂРѕСЃС‚РѕРІРѕРіРѕ РѕС‚РЅРѕС€РµРЅРёСЏ
  */
 public class WeightHeight {
-		private static Scanner enterParam;
+	private static Scanner enterParam;
+
 	public static void main(String[] args) {
-		enterParam=new Scanner(System.in);
+		enterParam = new Scanner(System.in);
 		int weight, height;
-		System.out.println("Введите ваш вес");
-		weight=enterParam.nextInt();
-		System.out.println("Введите ваш рост");
-		height=enterParam.nextInt();
-		if (weight>height-100 && weight !=height-100) {
-			System.out.println("Вам необходимо похудеть!");
-		} else if (weight<height-100 && weight !=height-100) {
-			System.out.println("Вам необходимо поправиться");
+		System.out.println("Р’РІРµРґРёС‚Рµ СЃРІРѕР№ РІРµСЃ");
+		weight = enterParam.nextInt();
+		System.out.println("Р’РІРµРґРёС‚Рµ СЃРІРѕР№ СЂРѕСЃС‚");
+		height = enterParam.nextInt();
+		if (weight > height - 100 && weight != height - 100) {
+			System.out.println("Р’Р°Рј РЅРµРѕР±С…РѕРґРёРјРѕ РїРѕС…СѓРґРµС‚СЊ!");
+		} else if (weight < height - 100 && weight != height - 100) {
+			System.out.println("Р’Р°Рј РЅРµРѕР±С…РѕРґРёРјРѕ РїРѕРїСЂР°РІРёС‚СЊСЃСЏ");
 		} else {
-			System.out.println("Вы в отличной форме!!!");
+			System.out.println("Р’С‹ РІ РѕС‚Р»РёС‡РЅРѕР№ С„РѕСЂРјРµ!!!");
 		}
 	}
 

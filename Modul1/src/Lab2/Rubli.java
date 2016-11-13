@@ -8,25 +8,18 @@ public class Rubli {
 	public static void main(String[] args) {
 		enterRubli = new Scanner(System.in);
 		int rubli;
-		System.out.println("Ââåäèòå êîëëè÷åñòâî äåíåã");
+		System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð´ÐµÐ½ÐµÐ³");
 		rubli = enterRubli.nextInt();
-		/*
-		 * boolean ends1=rubli.endsWith("1"); if (ends1){
-		 * System.out.println(rubli+" ðóáëü"); }
-		 */
-
-		// String rubliStr=Integer.toString(rubli);
-		// char lastNumb=rubliStr.charAt(rubliStr.length()-1);
 		int lastNumbInt = rubli % 10;
 		System.out.println("Last - " + lastNumbInt);
 		if (rubli >= 11 && rubli <= 20) {
-			System.out.println(rubli + " ðóáëåé");
+			System.out.println(rubli + " Ñ€ÑƒÐ±Ð»ÐµÐ¹");
 		} else if (lastNumbInt == 1) {
-			System.out.println(rubli + " ðóáëü");
+			System.out.println(rubli + " Ñ€ÑƒÐ±Ð»ÑŒ");
 		} else if (lastNumbInt == 2 || lastNumbInt > 2 && lastNumbInt == 4 || lastNumbInt < 4) {
-			System.out.println(rubli + " ðóáëÿ");
+			System.out.println(rubli + " Ñ€ÑƒÐ±Ð»Ñ");
 		} else if (lastNumbInt == 5 || lastNumbInt > 5 && lastNumbInt == 9 || lastNumbInt < 9) {
-			System.out.println(rubli + " ðóáëåé");
+			System.out.println(rubli + " Ñ€ÑƒÐ±Ð»ÐµÐ¹");
 		}
 	}
 }

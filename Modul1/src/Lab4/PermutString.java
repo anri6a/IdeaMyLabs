@@ -18,12 +18,12 @@ public class PermutString {
 		String enterFirstStr = enterString.nextLine();
 		System.out.println("Enter Second String");
 		String enterSecStr = enterString.nextLine();
-		char[] con1 = enterFirstStr.toCharArray();
-		Arrays.sort(con1);
-		enterFirstStr = String.valueOf(con1);
-		char[] con2 = enterSecStr.toCharArray();
-		Arrays.sort(con2);
-		enterSecStr = String.valueOf(con2);
+		char[] firstStrChar = enterFirstStr.toCharArray();
+		Arrays.sort(firstStrChar);
+		enterFirstStr = String.valueOf(firstStrChar);
+		char[] secondStrChar = enterSecStr.toCharArray();
+		Arrays.sort(secondStrChar);
+		enterSecStr = String.valueOf(secondStrChar);
 		// System.out.println(con2);
 		if (enterFirstStr.equals(enterSecStr)) {
 			System.out.println("Strings are same - characters swapped");

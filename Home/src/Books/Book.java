@@ -2,11 +2,13 @@ package Books;
 
 public class Book {
 	private int id;
+	private String name;
 	private String author;
 	private String pubHouse;
 	private int pubYear;
 	private int pages;
 	private int price;
+	private String binding;
 
 	public int getId() {
 		return id;
@@ -54,6 +56,28 @@ public class Book {
 
 	public void setPrice(int price) {
 		this.price = price;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getBinding() {
+		return binding;
+	}
+
+	public void setBinding(String binding) {
+		this.binding = binding;
+	}
+
+	@Override
+	public String toString() {
+
+		return "[" + id + " " + name + " " + author + "]";
 	}
 
 }

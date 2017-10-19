@@ -16,6 +16,7 @@ public class InscribedRectangle {
         int diagB=Integer.parseInt(b);
         System.out.println("Введите радиус");
         String r=diag_a.nextLine();
+        diag_a.close();
         int radius=Integer.parseInt(r);
 
         if (Math.sqrt(diagA*diagA+diagB*diagB)<2*radius)

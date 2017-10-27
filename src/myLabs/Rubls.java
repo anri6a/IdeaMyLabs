@@ -10,6 +10,7 @@ public class Rubls {
         Scanner scan=new Scanner(System.in);
         System.out.println("введите сумму");
         String scanInput=scan.nextLine();
+        scan.close();
         int userInput=Integer.parseInt(scanInput);
         int uI=userInput%10;
         if (userInput%100>=10&&userInput%100<=19)

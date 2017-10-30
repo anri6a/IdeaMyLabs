@@ -20,6 +20,7 @@ public class EasyCalc {
             System.out.println("2 - вычесть");
             System.out.println("q - выйти");
             in = sc.next();
+            sc.close();
             if (in.equals("q"))
                 break;
             else {

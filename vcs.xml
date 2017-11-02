@@ -6,7 +6,12 @@
           <option name="url" value="http://github.com" />
           <option name="userName" value="anri6a" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/Artem781/SimpleAtm/tree/master/src/atmPackage" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
+    <option name="cloneParentDir" value="D:\labs\idea\Artem781\ATM" />
   </component>
 </application>

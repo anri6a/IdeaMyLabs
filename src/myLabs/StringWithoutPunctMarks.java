@@ -1,7 +1,5 @@
 package myLabs;
 
-import static com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolver.length;
-
 /**
  * Created by 12 on 26.10.2017.
  * Count up all punctuation marks in input string

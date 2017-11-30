@@ -1,4 +1,4 @@
-package src.myLabs;
+package myLabs;
 
 public class DelFixLengthWordStartWithConsonant {
     public static void main(String args[]) {
